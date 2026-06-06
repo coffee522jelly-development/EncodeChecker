@@ -107,9 +107,8 @@
 </script>
 
 <div class="container mx-auto p-4 space-y-6">
-  <div class="flex justify-between items-center border-b pb-4">
-    <h1 class="text-2xl font-bold">Code Inspector</h1>
-    <Button onclick={checkFolder} disabled={isLoading}>
+  <div class="flex justify-end items-center border-b pb-4">
+    <Button onclick={checkFolder} disabled={isLoading} size="lg" class="px-8 font-bold">
       {isLoading ? "Checking..." : "Check"}
     </Button>
   </div>
@@ -160,11 +159,11 @@
       <Card.Header><Card.Title>Exclusions</Card.Title></Card.Header>
       <Card.Content class="space-y-4">
         <div class="space-y-2">
-            <Label>Exclude Folders (comma separated)</Label>
+            <Label>Exclude Folders</Label>
             <Input bind:value={excludeDirs} />
         </div>
         <div class="space-y-2">
-            <Label>Exclude Extensions (comma separated)</Label>
+            <Label>Exclude Extensions</Label>
             <Input bind:value={excludeExts} />
         </div>
       </Card.Content>
@@ -175,7 +174,7 @@
     <Card.Root><Card.Content class="pt-6"><div class="text-2xl font-bold">{stats.total}</div><div class="text-sm text-muted-foreground">Total</div></Card.Content></Card.Root>
     <Card.Root><Card.Content class="pt-6"><div class="text-2xl font-bold text-green-600">{stats.ok}</div><div class="text-sm text-muted-foreground">OK</div></Card.Content></Card.Root>
     <Card.Root><Card.Content class="pt-6"><div class="text-2xl font-bold text-destructive">{stats.ng}</div><div class="text-sm text-muted-foreground">NG</div></Card.Content></Card.Root>
-    <Card.Root><Card.Content class="pt-6"><div class="text-2xl font-bold text-orange-500">{stats.other}</div><div class="text-sm text-muted-foreground">Unknown / Binary</div></Card.Content></Card.Root>
+    <Card.Root><Card.Content class="pt-6"><div class="text-2xl font-bold text-orange-500">{stats.other}</div><div class="text-sm text-muted-foreground">Other</div></Card.Content></Card.Root>
   </div>
 
   <Card.Root>
@@ -204,7 +203,7 @@
             {#each filteredResults as row}
               <tr class="border-b last:border-0 hover:bg-muted/50 transition-colors">
                 <td class="p-2"><Badge variant={row.status === "OK" ? "secondary" : row.status === "NG" ? "destructive" : "outline"}>{row.status}</Badge></td>
-                <td class="p-2">{row.path}</td><td class="p-2">{row.encoding}</td><td class="p-2">{row.newline}</td><td class="p-2">{formatSize(row.size)}</td>
+                <td class="p-2 font-mono text-xs">{row.path}</td><td class="p-2">{row.encoding}</td><td class="p-2">{row.newline}</td><td class="p-2">{formatSize(row.size)}</td>
               </tr>
             {:else}
               <tr><td colspan="5" class="p-8 text-center text-muted-foreground">No results found.</td></tr>
