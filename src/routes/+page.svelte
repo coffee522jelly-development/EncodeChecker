@@ -23,7 +23,7 @@
   let expectedEncoding = $state("UTF-8");
   let expectedNewline = $state("LF");
   let excludeDirs = $state(".git, node_modules, dist, bin, obj");
-  let excludeExts = $state(".exe, .dll, .zip, .png, .jpg");
+  let excludeExts = $state(".exe, .dll, .zip, .png, .jpg, .xlsx, .pdf");
 
   let results = $state<FileResult[]>([]);
   let isLoading = $state(false);
