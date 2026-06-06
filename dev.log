@@ -8,3 +8,21 @@
 
   ➜  Local:   http://localhost:1420/
 3:14:35 AM [vite] (client) hmr update /src/routes/+page.svelte, /src/app.css
+4:23:51 AM [vite] (client) hmr update /src/routes/+page.svelte, /src/app.css
+4:25:32 AM [vite] (client) page reload .svelte-kit/generated/client/nodes/0.js
+4:25:32 AM [vite] (client) page reload .svelte-kit/generated/client/nodes/1.js
+4:25:32 AM [vite] (client) page reload .svelte-kit/generated/client/nodes/2.js
+4:25:32 AM [vite] (client) page reload .svelte-kit/generated/client/app.js
+4:25:32 AM [vite] (client) page reload .svelte-kit/generated/client/matchers.js
+4:25:32 AM [vite] (ssr) page reload .svelte-kit/generated/server/internal.js
+4:25:32 AM [vite] (client) page reload .svelte-kit/generated/root.js
+4:25:32 AM [vite] (ssr) page reload .svelte-kit/generated/root.js
+4:27:27 AM [vite] (client) page reload .svelte-kit/generated/client/nodes/0.js
+4:27:27 AM [vite] (client) page reload .svelte-kit/generated/client/nodes/1.js
+4:27:27 AM [vite] (client) page reload .svelte-kit/generated/client/nodes/2.js
+4:27:27 AM [vite] (client) page reload .svelte-kit/generated/client/app.js
+4:27:27 AM [vite] (client) page reload .svelte-kit/generated/client/matchers.js
+4:27:27 AM [vite] (ssr) page reload .svelte-kit/generated/server/internal.js
+4:27:27 AM [vite] (client) page reload .svelte-kit/generated/root.js
+4:27:27 AM [vite] (ssr) page reload .svelte-kit/generated/root.js
+4:32:33 AM [vite] (client) hmr update /src/routes/+page.svelte, /src/app.css
