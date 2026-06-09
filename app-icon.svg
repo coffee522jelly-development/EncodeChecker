@@ -1,0 +1,18 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Circle (Blue theme) -->
+  <circle cx="256" cy="256" r="240" fill="#2563EB" />
+
+  <!-- Document Shape -->
+  <path d="M160 100C160 88.9543 168.954 80 180 80H280L352 152V412C352 423.046 343.046 432 332 432H180C168.954 432 160 423.046 160 412V100Z" fill="white" />
+  <path d="M280 80V152H352L280 80Z" fill="#E2E8F0" />
+
+  <!-- Magnifying Glass -->
+  <circle cx="280" cy="280" r="60" stroke="#1E293B" stroke-width="24" fill="white" />
+  <line x1="325" y1="325" x2="380" y2="380" stroke="#1E293B" stroke-width="24" stroke-linecap="round" />
+
+  <!-- Checkmark inside glass -->
+  <path d="M255 280L272 297L305 264" stroke="#059669" stroke-width="16" stroke-linecap="round" stroke-linejoin="round" />
+
+  <!-- "EN" (Encoding hint) text bottom left -->
+  <text x="180" y="380" fill="#1E293B" font-family="sans-serif" font-weight="bold" font-size="40">EN</text>
+</svg>
